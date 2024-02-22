@@ -1,0 +1,11 @@
+.body1{
+    background-color: black;
+}
+.body2{
+    background-color: black;
+}
+.photo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}

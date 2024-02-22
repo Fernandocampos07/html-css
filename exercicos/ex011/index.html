@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html</title>
+</head>
+<body>
+   <h1>Imagens dinâmicas em HTML</h1>
+   <p>Abaixo será mostrada uma imagem que se adapta a vários tipos de tela</p> 
+   <picture> <!--As tags juntas ajudam a adaptar a imagem em diferentes tamanhos de tela-->
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="foto-g">
+    </picture>
+
+    
+    <h1>Audio em site</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <p>Seu navegador não pode reproduzir audios</p>
+        <a href="midia/guanacast-33.mp3">Cique aqui para baixar o audio MP3</a>
+    </audio>
+    
+</body>
+</html>
