@@ -11,6 +11,12 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            background-color: rgba(128, 128, 128, 0.39);
+            color: white;
+            padding: 5px;
         }
         td, th{
             border: 1px solid black;
@@ -20,16 +26,26 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.479);
+        }
         td.num{
             text-align: right;
         }
     </style>
 </head>
 <body>
+    <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>população por estado</caption>
         <thead>
-            <th>estado</th>
-            <th>população</th>
+            <th scope="col">estado</th>
+            <th scope="col" style="width: 100px;">população</th>
         </thead>
         <tbody>
             <tr>
@@ -75,7 +91,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>000000</strong></td>
             </tr>
         </tfoot>
