@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela responsiva</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .container{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela responsiva</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dolorum quis optio illum similique, beatae autem, excepturi ipsa sunt impedit, temporibus nesciunt accusantium cum? Odio quae explicabo atque voluptatem modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sunt beatae recusandae voluptates minima facere dolorem inventore nemo nostrum, dicta repudiandae commodi ab nesciunt velit expedita reiciendis omnis placeat alias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptates pariatur dolor ut, debitis alias soluta corporis placeat molestias delectus mollitia aliquid sapiente similique, provident quasi hic voluptatem? Modi, voluptatem?</p>
+    <div class="container">
+        <table>
+            <caption>população por estado</caption>
+            <thead>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 100px;">população</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">44 411 238</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">20 538 718</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">16 054 524</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 141 626</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 444 380</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10 882 965</td>
+                </tr>
+                <tr>
+                    <td>Pernanbuco</td>
+                    <td class="num">9 058 931</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 794 957</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 121 025</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 610 361	</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td class="num"><strong>000000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
