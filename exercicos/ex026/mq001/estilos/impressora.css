@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*Media query para impressoras*/
+ *{
+    font-family: 'Courier New', Courier, monospace;
+ }
+ header > h1{
+    text-align: center;
+ }
+ menu{
+    display: none;
+ }
+ 
