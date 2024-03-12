@@ -22,9 +22,10 @@ body{
 main{
     background-color: rgba(255, 255, 255, 0.767);
     color: white;
-    width: 90vw;
+    width: 400px;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.534);
     margin: auto;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
 }
